@@ -1,10 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main() {
-  for(int i=0; i<10; i++) {
-    if(i==3)
-      continue;
-    else
-      cout << i << endl;
-  }
+
+int main()
+{
+	int arr[5], i;
+
+	cout << "Size of integer in this compiler is "
+		<< sizeof(int) << "\n";
+
+	for (i = 0; i < 5; i++)
+		cout << "Address arr[" << i << "] is " << &arr[i] << "\n";
+
+	return 0;
 }
